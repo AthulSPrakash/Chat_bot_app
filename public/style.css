@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(7, 5, 14);
+    padding: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    border: none;
+    background: rgb(0, 158, 197);
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 2em;
+    cursor: pointer;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+    transition: 0.2s;
+}
+button:active{
+    transition: 0.2s;
+    background: rgb(2, 209, 95)
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 10em;
+    height: 10em;
+    border-radius: 5em;
+    margin-top: 3em;
+    animation: colors 5s linear infinite;
+    overflow: hidden;
+}
+@keyframes colors {
+    0%{
+        outline: 0.35em solid rgba(0, 158, 197, 0.2);
+        border: 0.35em solid rgb(0, 158, 197);
+    }
+    50%{
+        outline: 0.35em solid rgba(0, 158, 197, 0.2);
+        border: 0.35em solid rgb(0, 158, 197);
+    }
+    100%{
+        outline: 0.35em solid rgb(0, 158, 197);
+        border: 0.35em solid rgba(0, 158, 197, 0.2);
+    }
+    50%{
+        outline: 0.35em solid rgba(0, 158, 197, 0.2);
+        border: 0.35em solid rgb(0, 158, 197);
+    }
+    0%{
+        outline: 0.35em solid rgb(0, 158, 197);
+        border: 0.35em solid rgba(0, 158, 197, 0.2);
+        
+    }
+}
+.text-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4em;
+    flex-grow: 1;
+}
+p{
+    font-weight: 600;
+}
+.text-in{
+    color: grey;
+    text-transform: capitalize;
+}
+.text-out{
+    font-size: 2.2em;
+    color: rgb(245, 245, 245);
+}
